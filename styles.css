@@ -1,130 +1,130 @@
-/* Annulla margini e padding di default e imposta box-sizing
-  uniforme in tutti i browser. */
+/* Selettore universale per tutti gli elementi nella pagina html, annulla margini e padding di default e imposta box-sizing
+  uniforme in tutti i browser */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Font */
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  background-color: #f8f5f0; 
-  color: #000000;
-  line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #f8f5f0;
+    color: #000000;
+    line-height: 1.6;
 }
 
-/* HEADER
-  Sottile, sfondo viola scuro con testo bianco centrato. */
+/* HEADER, Sfondo viola scuro con testo bianco centrato */
 .header {
-  background-color: #321d4b; 
-  color: #ffffff;
-  line-height: 40px;
-  text-align: center;
-  font-size: 0.9em;
+    background-color: #321d4b;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.9em;
 }
 
-/* SLIDER VIGNETO
-  Immagine di sfondo a larghezza piena, testo centrato. */
-.slider-vigneto {
-  background: 
-    url('img/vigneto.jpg') center/cover no-repeat;
-  height: 60vh; /* Altezza per visualizzare bene l'immagine */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff; 
+/* SLIDE VIGNETO, Immagine a larghezza piena */
+.slide-vigneto {
+    background:
+        url('img/vigneto.jpg') center/cover no-repeat; /* immagine centrata, copre l'intera area e impedisce la ripetizione */
+    height: 60vh; /* altezza dell'elemento al 60% del viewport  */
 }
 
-/* DOWNLOAD
-  Centra il contenuto e aggiunge spaziatura interna. */
+/* DOWNLOAD, regole di larghezza massima e spaziatura */
 .report-download {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Titolo della sezione download */
 .report-download h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2em;
-  font-weight: 400;
-  color: #321d4b; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 400;
+    color: #321d4b;
 }
 
 /*Link di download con flexbox per layout responsive */
 .download-button-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* PULSANTI DI DOWNLOAD
-  Link trasformati in pulsanti con transizione hover. */
+/* PULSANTI DI DOWNLOAD, link trasformati in pulsanti con transizione hover. */
 .download-button {
-  display: inline-block;
-  background-color: #1a4f3b; 
-  color: #ffffff;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-  white-space: nowrap; /* Evita che il testo vada a capo sul pulsante */
+    display: inline-block;
+    background-color: #1a4f3b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px; /* bordo bottone arrotondato */
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* regole transizione per hover */
+    white-space: nowrap; /* impedisce che il testo vada a capo sul pulsante */
 }
 
 /* Effetto hover sul pulsante */
 .download-button:hover {
-  background-color: #32705e; 
+    background-color: #32705e;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #123124;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #123124;
 }
 
+/* regole per video vigna */
 .video-container video {
-  max-width: 100%; /* Rende il video responsivo */
-  height: auto;    /* Mantiene le proporzioni */
-  display: block;  /* Per centrare con margin auto */
-  margin: 20px auto; /* Centra orizzontalmente con un margine superiore/inferiore */
-  border: 1px solid #ccc; /* Aggiunge un bordo */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+    max-width: 100%; /* Rende il video responsivo */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Per centrare con margin auto */
+    margin: 20px auto; /* Centra orizzontalmente con un margine superiore/inferiore */
+    border: 1px solid #ccc; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
 }
 
+/* regole dimensioni e spaziatura articoli */
 article {
     width: 90%; /* Larghezza generale dell'articolo */
     max-width: 1200px; /* Larghezza massima per articoli più grandi */
     margin: 20px auto; /* Centra l'articolo nella pagina */
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Semplifica gestione spaziatura includendo padding in altezza e larghezza massima */
 }
 
+/* regole per immagini responsive */
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Rimuove lo spazio extra sotto l'immagine */
+    display: block;
 }
 
 p {
     margin-bottom: 1em;
 }
 
-/* Sezione Uva, immagine centrale con titolo e paragrafo sotto */
+/* Sezione Uva, immagine centrale con titolo e paragrafo in colonna */
 .Uva {
     display: flex;
     flex-direction: column; /* Colonna per impilare immagine, titolo e testo */
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
+}
+
+.uvah3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #896e8b
 }
 
 .Uva .image-container,
@@ -138,22 +138,7 @@ p {
     margin: 0 auto 20px auto; /* Centra l'immagine e aggiunge spazio sotto */
 }
 
-.uvah3 {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-     color: #896e8b
-}
-
 /* Sezione NO-List, immagine a sinistra, paragrafo a destra con titolo sopra entrambi */
-.no-listh3 {
-    text-align: center; /* Il titolo rimane centrato sopra la sezione */
-    margin-top: 40px;
-    color: #d00707; 
-    margin-bottom: 40px;
-}
-
 .NO-List {
     display: flex;
     flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
@@ -162,29 +147,29 @@ p {
     gap: 40px; /* Spazio tra immagine e testo */
 }
 
+.no-listh3 {
+    text-align: center;
+    margin-top: 40px;
+    color: #d00707;
+    margin-bottom: 40px;
+}
+
 .NO-List .image-container2 {
     flex: 1; /* Permette all'immagine di occupare lo spazio disponibile */
     min-width: 300px; /* Larghezza minima per l'immagine */
     max-width: 45%; /* Larghezza massima dell'immagine in percentuale */
-    order: 1; /* Ordine di visualizzazione */
+    order: 1; /* Ordine di visualizzazione, img a sinistra */
 }
 
 .NO-List .text-container2 {
     flex: 2; /* Permette al testo di occupare più spazio */
     min-width: 350px; /* Larghezza minima per il testo */
     max-width: 50%; /* Limita la larghezza del testo */
-    order: 2; /* Ordine di visualizzazione */
+    order: 2; /* Testo a destra */
     text-align: justify;
 }
 
-/* Sezione Eco-Packaging, immagine a destra, paragrafo a sinistra con titolo sopra entrambi */
-.Eco-Packagingh3 {
-    text-align: center; /* Il titolo rimane centrato sopra la sezione */
-    margin-top: 40px;
-    color: #210138; 
-    margin-bottom: 40px;
-}
-
+/* Sezione Eco-Packaging, immagine a dx, paragrafo a sx con titolo sopra entrambi */
 .Eco-Packaging {
     display: flex;
     flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
@@ -193,95 +178,104 @@ p {
     gap: 20px; /* Spazio tra immagine e testo */
 }
 
+.Eco-Packagingh3 {
+    text-align: center; 
+    margin-top: 40px;
+    color: #210138;
+    margin-bottom: 40px;
+}
+
 .Eco-Packaging .image-container3 {
     flex: 1;
     min-width: 300px;
     max-width: 45%;
-    order: 2; /* L'immagine a destra */
+    order: 2; /* Immagine a destra */
 }
 
 .Eco-Packaging .text-container3 {
     flex: 2;
     min-width: 350px;
     max-width: 50%;
-    order: 1; /* Il testo a sinistra */
+    order: 1; /* Testo a sinistra */
     text-align: justify;
 }
 
-/* Sezione Ambiente, immagini una sotto l'altra a sinistra, paragrafo a destra con titolo sopra */
+/* Sezione Ambiente, riquadri con immagini a sx, paragrafo a dx */
 .Ambienteh3 {
-    text-align: center; /* Il titolo rimane centrato sopra la sezione */
+    text-align: center;
     margin-top: 40px;
-    color: #0a3b0a; 
+    color: #0a3b0a;
     margin-bottom: 40px;
 }
 
+/* Paragrafo introduttivo e conclusivo con stesse regole */
 .Ambiente .intro-ambiente,
 .Ambiente .altri-impegni-ambiente {
-    width: 100%; /* blocchi di testo che occupano tutta la larghezza */
-    margin-bottom: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+/* Creazione di una griglia per riquadri */
 .ambiente-grid-container {
     display: grid; /* Usiamo Grid anziché Flexbox */
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); /* Crea colonne flessibili */
     gap: 60px; /* Spazio TRA le colonne e le righe */
     margin-bottom: 40px;
     width: 100%;
-    max-width: 1400px; 
+    max-width: 1400px;
     justify-content: center; /* Centra la griglia se non occupa tutta la larghezza massima */
     margin-left: auto; /* Centra il contenitore Grid */
     margin-right: auto; /* Centra il contenitore Grid */
     box-sizing: border-box;
-    padding: 0 20px; /* Piccolo padding laterale per dare respiro ai bordi */
+    padding: 0 20px;
 }
 
-/* classi item d'appoggio per singoli paragrafi e immagini */
+/* Classi item per singoli paragrafi e immagini */
 .ambiente-item {
     display: flex; /* Flexbox per affiancare immagine e paragrafo */
     align-items: flex-start;
     gap: 35px; /* Aumentato spazio tra l'immagine e il suo rispettivo paragrafo */
-    /* Qui non utilizzo width e min-width, sarà Grid a gestirli */
+    /* Non avremo bisogno di width e min-width, in quanto sarà Grid a gestirli */
     box-sizing: border-box;
-    border: 1px solid #eee; /* Un piccolo bordo per dare consistenza al blocco */
-    padding: 20px; /* Spazio interno al blocco */
+    border: 1px solid #eee;
+    padding: 20px;
     border-radius: 8px; /* Bordo arrotondato */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Leggera ombreggiatura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombreggiatura */
 }
 
-/* Stili per le immagini all'interno di ambiente-item */
+/* Stile immagine di ambiente-item */
 .ambiente-item img {
-    width: 450px; 
+    width: 450px;
     height: auto;
     flex-shrink: 0;
     border-radius: 16px;
     object-fit: cover;
 }
 
-/* Stili per il paragrafo all'interno di ambiente-item */
+/* Stili per il paragrafo di ambiente-item */
 .ambiente-item p {
     flex-grow: 1; /* Il paragrafo occuperà tutto lo spazio rimanente */
     text-align: justify;
-    font-size: 1.1em; 
+    font-size: 1.1em;
     line-height: 1.7;
     margin: 0;
-    padding-top: 8px; 
+    padding-top: 8px;
 }
 
-/* Sezione Team, immagine a destra, paragrafo a sinistra con titolo sopra entrambi */
-.Teamh3 {
-    text-align: center; 
-    margin-top: 40px;
-    color: #05095e; 
-    margin-bottom: 40px;
-}
-
+/* Sezione Team, immagine a dx e paragrafo a sx */
 .Team {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     margin-bottom: 40px;
     gap: 40px;
+}
+
+.Teamh3 {
+    text-align: center;
+    margin-top: 40px;
+    color: #05095e;
+    margin-bottom: 40px;
 }
 
 .Team .image-container5 {
@@ -299,12 +293,13 @@ p {
     text-align: justify;
 }
 
+/* Sezione footer */
 footer {
-    background-color: #f0f0f0; 
-    color: #555; 
+    background-color: #f0f0f0;
+    color: #555;
     text-align: center;
-    padding: 20px; 
-    margin-top: 50px; 
+    padding: 20px;
+    margin-top: 50px;
     font-size: 0.9em;
 }
 
@@ -316,6 +311,7 @@ footer p {
 
 /* Breakpoint per schermi desktop medi e tablet grandi (1400px o meno) */
 @media (max-width: 1400px) {
+
     /* per la sezione Ambiente */
     .ambiente-grid-container {
         grid-template-columns: 1fr; /* Una singola colonna per gli item della griglia */
@@ -341,12 +337,12 @@ footer p {
     }
 
     .altri-impegni-ambiente {
-      text-align: justify;
+        text-align: justify;
     }
 }
 
 
-/* Adatta il breakpoint di 768px a 900px per migliore layout Ambiente */
+/* Adatta il breakpoint di 768px a 900px Smartphone con schermi grandi */
 @media (max-width: 900px) {
     body {
         font-size: 0.95em; /* Ridotto leggermente la dimensione base del font */
@@ -356,8 +352,8 @@ footer p {
         font-size: 0.8em; /* Ridotto la dimensione del font nell'header */
     }
 
-    .slider-vigneto {
-        height: 45vh; /* Ridotto l'altezza dello slider su schermi più piccoli */
+    .slide-vigneto {
+        height: 45vh; /* Ridotto l'altezza dello slide */
     }
 
     .report-download {
@@ -379,10 +375,10 @@ footer p {
         font-size: 0.9em; /* Ridotto la dimensione del font dei pulsanti */
     }
 
-    h2 { /* h2 generico */
+    h2 {
         font-size: 1.2em;
         margin-bottom: 15px;
-    } 
+    }
 
     .video-container video {
         margin: 20px auto; /* Adattato il margine del video */
@@ -394,25 +390,25 @@ footer p {
     }
 
     .uvah3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #896e8b
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #896e8b
     }
 
-     .Uva {
+    .Uva {
         gap: 25px; /* Ridotto lo spazio tra gli elementi interni */
-        max-width: 100%; /* Intera larghezza su tablet */
+        max-width: 100%;
     }
 
     .Uva .image-container {
-        width: 85vw; /* Fa in modo che l'immagine occupi più larghezza su schermi medi */
+        width: 85vw;
         max-width: none;
     }
 
     .Uva .text-container p {
         font-size: 1em;
         line-height: 1.6;
-        text-align: justify; 
+        text-align: justify;
     }
 
     .NO-List,
@@ -439,7 +435,7 @@ footer p {
     }
 
     .Eco-Packagingh3 {
-    margin-bottom: -20px;
+        margin-bottom: -20px;
     }
 
     .text-container3 {
@@ -447,16 +443,16 @@ footer p {
     }
 
     .ambiente-item {
-        flex-direction: column; /* Immagine e testo si impilano all'interno dell'item */
+        flex-direction: column; /* Immagine e testo si impilano */
         align-items: center;
         text-align: center;
         gap: 25px;
-        padding: 15px; /* Ridotto il padding se necessario per schermi più piccoli */
+        padding: 15px;
     }
 
     .ambiente-item img {
-        width: 100%; /* L'immagine occupa la larghezza completa dell'item */
-        max-width: 450px; /* Limite massimo per l'immagine */
+        width: 100%; /* L'immagine occupa la larghezza completa */
+        max-width: 450px;
     }
 
     .ambiente-item p {
@@ -467,23 +463,23 @@ footer p {
     }
 
     .altri-impegni-ambiente {
-      text-align: justify;
+        text-align: justify;
     }
 }
 
-
 /* Schermi piccoli */
-@media (max-width: 600px) { /* Adattato a 600px per gestire meglio la transizione */
+@media (max-width: 600px) {
+
     body {
-        font-size: 0.9em; /* Ulteriore riduzione della dimensione base del font */
+        font-size: 0.9em; /* Ulteriore riduzione dei font e titoli */
     }
 
     .header {
         font-size: 0.75em;
     }
 
-    .slider-vigneto {
-        height: 35vh; /* Ridotto ulteriormente l'altezza dello slider */
+    .slide-vigneto {
+        height: 35vh; /* Ridotto ulteriormente l'altezza dello slide */
     }
 
     .report-download {
@@ -492,11 +488,11 @@ footer p {
     }
 
     .report-download h1 {
-        font-size: 1.5em; /* Ridotto la dimensione del titolo di download */
+        font-size: 1.5em;
     }
 
     .download-button-list {
-        flex-direction: column; /* Pulsanti di download impilati verticalmente in caso aggiunga ulteriori anni */
+        flex-direction: column; /* Pulsanti di download impilati verticalmente in caso di aggiunta ulteriori anni */
         align-items: center; /* Pulsanti centrati */
         gap: 10px;
     }
@@ -509,7 +505,7 @@ footer p {
         font-size: 0.9em;
     }
 
-    h2 { 
+    h2 {
         font-size: 1.1em;
         margin-bottom: 10px;
     }
@@ -533,18 +529,19 @@ footer p {
     }
 
     .Uva .text-container p {
-        font-size: 0.9em; 
+        font-size: 0.9em;
         line-height: 1.5;
-        text-align: justify; 
+        text-align: justify;
     }
 
-    /* Stili specifici per la sezione NO-List, Eco-Packaging, Team */
+    /* Stili specifici per sezioni NO-List, Eco-Packaging, Team */
     .NO-List .image-container2,
     .Eco-Packaging .image-container3,
     .Team .image-container5 {
-        width: 90%; /* L'immagine occupa quasi tutta la larghezza su smartphone */
-        max-width: 300px; /* Impostato un max-width per le immagini in queste sezioni */
+        width: 90%; /* img occupa quasi tutta la larghezza */
+        max-width: 300px;
     }
+
     .NO-List .text-container2 p,
     .Eco-Packaging .text-container3 p,
     .Team .text-container5 p {
@@ -553,19 +550,19 @@ footer p {
         text-align: justify;
     }
 
-    /* Modifiche per la sezione Ambiente all'interno di questo breakpoint */
+    /* Modifiche per la sezione Ambiente */
     .ambiente-item img {
         width: 95%; /* Leggermente meno del 100% per un piccolo margine */
-        max-width: 350px; /* Ulteriore limite massimo */
+        max-width: 350px;
     }
 
     .ambiente-item p {
         font-size: 0.9em;
-        text-align: justify; 
+        text-align: justify;
     }
-    
+
     .altri-impegni-ambiente {
-      text-align: justify;
+        text-align: justify;
     }
 }
 
@@ -574,18 +571,21 @@ footer p {
     body {
         font-size: 0.85em;
     }
+
     .header {
         font-size: 0.7em;
     }
+
     .ambiente-item img {
-        max-width: 250px; /* Riduzione per smartphone molto piccoli */
+        max-width: 250px;
     }
+
     .ambiente-item p {
         font-size: 0.85em;
         text-align: justify;
     }
 
     .altri-impegni-ambiente {
-      text-align: justify;
+        text-align: justify;
     }
 }
