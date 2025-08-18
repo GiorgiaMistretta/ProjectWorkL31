@@ -80,16 +80,6 @@ h2 {
     color: #123124;
 }
 
-/* regole per video vigna */
-.video-container video {
-    max-width: 100%; /* Rende il video responsivo */
-    height: auto; /* Mantiene le proporzioni */
-    display: block; /* Per centrare con margin auto */
-    margin: 20px auto; /* Centra orizzontalmente con un margine superiore/inferiore */
-    border: 1px solid #ccc; 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
-}
-
 /* regole dimensioni e spaziatura articoli */
 article {
     width: 90%; /* Larghezza generale dell'articolo */
@@ -136,6 +126,16 @@ p {
 
 .Uva img {
     margin: 0 auto 20px auto; /* Centra l'immagine e aggiunge spazio sotto */
+}
+
+/* regole per video vigna */
+.video-container video {
+    max-width: 100%; /* Rende il video responsivo */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Per centrare con margin auto */
+    margin: 20px auto; /* Centra orizzontalmente con un margine superiore/inferiore */
+    border: 1px solid #ccc; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
 }
 
 /* Sezione NO-List, immagine a sinistra, paragrafo a destra con titolo sopra entrambi */
