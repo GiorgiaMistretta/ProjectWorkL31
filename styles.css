@@ -342,7 +342,7 @@ footer p {
 }
 
 
-/* Adatta il breakpoint di 768px a 900px Smartphone con schermi grandi */
+/* Adatta il breakpoint di 601px a 900px Smartphone con schermi grandi */
 @media (max-width: 900px) {
     body {
         font-size: 0.95em; /* Ridotto leggermente la dimensione base del font */
@@ -540,6 +540,18 @@ footer p {
     .Team .image-container5 {
         width: 90%; /* img occupa quasi tutta la larghezza */
         max-width: 300px;
+    }
+
+    .image-container3 {
+        margin: 0;
+    }
+
+    .Eco-Packagingh3 {
+        margin-bottom: -20px;
+    }
+
+    .text-container3 {
+        margin-top: -60px;
     }
 
     .NO-List .text-container2 p,
