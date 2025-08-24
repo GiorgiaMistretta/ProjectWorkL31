@@ -185,6 +185,10 @@ p {
     margin-bottom: 40px;
 }
 
+.br600px_eco {
+    display: none; /* Nasconde il <br> per tutte le risoluzioni superiori a 600px */
+}
+
 .Eco-Packaging .image-container3 {
     flex: 1;
     min-width: 300px;
@@ -309,7 +313,7 @@ footer p {
 
 /* Media Queries per rendere reattiva la pagina web sui diversi schermi e risoluzioni */
 
-/* Breakpoint per schermi desktop medi e tablet grandi (1400px o meno) */
+/* Adatta il breakpoint sotto i 1400px */
 @media (max-width: 1400px) {
 
     /* per la sezione Ambiente */
@@ -342,7 +346,7 @@ footer p {
 }
 
 
-/* Adatta il breakpoint di 601px a 900px Smartphone con schermi grandi */
+/* Adatta il breakpoint sotto i 900px */
 @media (max-width: 900px) {
     body {
         font-size: 0.95em; /* Ridotto leggermente la dimensione base del font */
@@ -467,7 +471,7 @@ footer p {
     }
 }
 
-/* Schermi piccoli */
+/* Adatta il breakpoint sotto i 600px */
 @media (max-width: 600px) {
 
     body {
@@ -514,11 +518,6 @@ footer p {
         margin: 10px auto;
     }
 
-    footer {
-        padding: 10px;
-        font-size: 0.65em;
-    }
-
     .Uva {
         padding: 20px 15px; /* Ridotto ulteriormente il padding */
         gap: 20px; /* Ridotto ulteriormente il gap */
@@ -550,6 +549,10 @@ footer p {
         margin-bottom: -20px;
     }
 
+    .br600px_eco {
+        display: block; /* Mostra il <br> solo per le risoluzioni sotto i 600px */
+    }
+
     .text-container3 {
         margin-top: -60px;
     }
@@ -575,6 +578,11 @@ footer p {
 
     .altri-impegni-ambiente {
         text-align: justify;
+    }
+
+        footer {
+        padding: 10px;
+        font-size: 0.65em;
     }
 }
 
